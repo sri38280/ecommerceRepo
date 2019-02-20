@@ -87,6 +87,7 @@ public class LoginPageTest {
 		loginpage.loginToAutomationExcel();
 		System.out.println("test");
 		System.out.println("test1");
+		System.out.println("test2");
 		//String title = driver.getTitle();
 		//Assert.assertEquals(title, "My account - My Store", "logged in successfully");
 	}
