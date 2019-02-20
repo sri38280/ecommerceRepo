@@ -1,0 +1,6 @@
+2019-02-20 09:40:00,028  INFO [main] LoginTest:36 - ****************************** Starting test cases execution  *****************************************
+2019-02-20 09:40:00,043  INFO [main] LoginTest:41 - launching chrome broswer
+2019-02-20 09:40:04,180  INFO [main] LoginTest:43 - entering application URL.......
+2019-02-20 09:40:11,090  WARN [main] LoginTest:46 - Hey this just a warning message
+2019-02-20 09:40:11,091 FATAL [main] LoginTest:47 - hey this is just fatal error message
+2019-02-20 09:40:11,091 DEBUG [main] LoginTest:48 - this is debug message
