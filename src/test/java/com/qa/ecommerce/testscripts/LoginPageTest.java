@@ -21,7 +21,7 @@ import com.qa.ecommerce.util.TestUtil;
 
 import TestNGListenerConcept.CustomListener;
 //@Listeners(CustomListener.class)
-
+//@author Sri
 public class LoginPageTest {
 
 	
@@ -85,6 +85,7 @@ public class LoginPageTest {
 	public void ExceldataDriven() throws IOException{
 		
 		loginpage.loginToAutomationExcel();
+		System.out.println("test");
 		//String title = driver.getTitle();
 		//Assert.assertEquals(title, "My account - My Store", "logged in successfully");
 	}
