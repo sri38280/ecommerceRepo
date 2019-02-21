@@ -1,23 +1,17 @@
 package com.qa.ecommerce.pages;
 
 import java.io.IOException;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.Listeners;
 
 import com.qa.ecommerce.base.TestBase;
 import com.qa.ecommerce.util.TestUtil;
 
 import ExcelReader.Xls_Reader;
-import TestNGListenerConcept.CustomListener;
-@Listeners(CustomListener.class)
+
 public class LoginPage extends TestBase {
 
 	@FindBy(id= "email")

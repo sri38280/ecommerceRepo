@@ -6,7 +6,7 @@ import org.testng.ITestResult;
 
 import com.qa.ecommerce.base.TestBase;
 
-public class CustomListener extends TestBase implements ITestListener {
+/*public class CustomListener extends TestBase implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -48,3 +48,4 @@ public class CustomListener extends TestBase implements ITestListener {
 	}
 
 }
+*/
