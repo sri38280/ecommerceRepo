@@ -62,6 +62,6 @@ public void verifyAddressLabelTest()
 	
 	public void tearDown(){
 		
-	//driver.quit();
+	TestBase.getDriver().quit();
 	}
 }

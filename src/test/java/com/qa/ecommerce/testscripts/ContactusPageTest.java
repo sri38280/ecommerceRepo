@@ -4,6 +4,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -15,7 +16,7 @@ import com.qa.ecommerce.pages.LoginPage;
 public class ContactusPageTest {
 	
 	public TestBase testbase;
-public WebDriver driver;
+//public WebDriver driver;
 public Properties prop;
 
 public LoginPage loginpage;
@@ -27,8 +28,8 @@ public ContactusPage contactus;
 public void setUp(){
 	testbase= new TestBase();
 	prop = testbase.init_properties();
-	driver = testbase.init_driver(prop.getProperty("browser"));
-	driver.get(prop.getProperty("url"));
+	 testbase.init_driver(prop.getProperty("browser"));
+	TestBase.getDriver().get(prop.getProperty("url"));
 	loginpage= new LoginPage();
 	homepage= loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 	contactus = homepage.GoToContactUsPage();
@@ -48,5 +49,10 @@ public void verifyContactUsTitleTest(){
 	
 	Assert.assertEquals(contactustitle, "Contact us - My Store");
 }
+@AfterMethod
 
+public void tearDown(){
+	
+	TestBase.getDriver().quit();
+}
 }

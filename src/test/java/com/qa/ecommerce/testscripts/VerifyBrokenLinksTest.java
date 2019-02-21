@@ -11,7 +11,7 @@ import com.qa.ecommerce.base.TestBase;
 import com.qa.ecommerce.pages.HomePage;
 
 public class VerifyBrokenLinksTest {
-public WebDriver driver;
+//public WebDriver driver;
 public Properties prop;
 public TestBase testbase;
 public HomePage homepage;
@@ -22,7 +22,7 @@ public HomePage homepage;
 	
 	testbase = new TestBase();
 	prop= testbase.init_properties();
-	driver= testbase.init_driver(prop.getProperty("browser"));
+	testbase.init_driver(prop.getProperty("browser"));
 	//driver.get(prop.getProperty("url"));
 	homepage= new HomePage();
 	
@@ -38,7 +38,7 @@ public void BrokenlinksTest(){
 @AfterTest
 
 public void quit(){
-	driver.quit();
+	TestBase.getDriver().quit();
 }
 	
 	

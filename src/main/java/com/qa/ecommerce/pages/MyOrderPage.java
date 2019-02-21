@@ -160,7 +160,7 @@ public class MyOrderPage extends TestBase {
 		//BlueBtn.click();
 		//TestUtil.shortWait();
 		addTocart.click();
-		TestUtil.shortWait();
+		TestUtil.mediumWait();;
 		
 		String carttotl= cartTotal.getText();
 		System.out.println(carttotl);

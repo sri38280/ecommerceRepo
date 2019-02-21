@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.ecommerce.testscripts.IdentityPageTest">
+      <class name="com.qa.ecommerce.testscripts.RegistrationPageTest">
         <methods>
-          <include name="teardown"/>
-          <include name="setUp"/>
-          <include name="updatePersonalInfo"/>
+          <include name="RegnTest"/>
+          <include name="tearDown"/>
+          <include name="setUP"/>
         </methods>
-      </class> <!-- com.qa.ecommerce.testscripts.IdentityPageTest -->
+      </class> <!-- com.qa.ecommerce.testscripts.RegistrationPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

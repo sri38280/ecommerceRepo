@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76990" started-at="2019-02-21T12:56:07Z" finished-at="2019-02-21T12:57:24Z">
+  <suite name="Default suite" duration-ms="120715" started-at="2019-02-21T18:54:50Z" finished-at="2019-02-21T18:56:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="76990" started-at="2019-02-21T12:56:07Z" finished-at="2019-02-21T12:57:24Z">
-      <class name="com.qa.ecommerce.testscripts.LoginPageTest">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:com.qa.ecommerce.testscripts.LoginPageTest@5ec0a365]" name="setUP" is-config="true" duration-ms="7565" started-at="2019-02-21T06:56:07Z" finished-at="2019-02-21T06:56:14Z">
+    <test name="Default test" duration-ms="120715" started-at="2019-02-21T18:54:50Z" finished-at="2019-02-21T18:56:51Z">
+      <class name="com.qa.ecommerce.testscripts.VerifyBrokenLinksTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.ecommerce.testscripts.VerifyBrokenLinksTest@224edc67]" name="setUp" is-config="true" duration-ms="4104" started-at="2019-02-21T12:54:50Z" finished-at="2019-02-21T12:54:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="ExceldataDriven()[pri:5, instance:com.qa.ecommerce.testscripts.LoginPageTest@5ec0a365]" name="ExceldataDriven" duration-ms="68760" started-at="2019-02-21T06:56:14Z" finished-at="2019-02-21T06:57:23Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="BrokenlinksTest()[pri:0, instance:com.qa.ecommerce.testscripts.VerifyBrokenLinksTest@224edc67]" name="BrokenlinksTest" duration-ms="115947" started-at="2019-02-21T12:54:55Z" finished-at="2019-02-21T12:56:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ExceldataDriven -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.ecommerce.testscripts.LoginPageTest@5ec0a365]" name="teardown" is-config="true" duration-ms="641" started-at="2019-02-21T06:57:23Z" finished-at="2019-02-21T06:57:24Z">
+        </test-method> <!-- BrokenlinksTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qa.ecommerce.testscripts.VerifyBrokenLinksTest@224edc67]" name="quit" is-config="true" duration-ms="625" started-at="2019-02-21T12:56:50Z" finished-at="2019-02-21T12:56:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.qa.ecommerce.testscripts.LoginPageTest -->
+        </test-method> <!-- quit -->
+      </class> <!-- com.qa.ecommerce.testscripts.VerifyBrokenLinksTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

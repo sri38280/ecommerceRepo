@@ -17,7 +17,7 @@ import com.qa.ecommerce.util.TestUtil;
 public class MyOrderTest {
 public TestBase testbase;
 public Properties prop;
-public WebDriver driver;
+//public WebDriver driver;
 public LoginPage loginpage;
 public HomePage homepage;
 public MyOrderPage mystorepage;
@@ -28,9 +28,9 @@ public void setUP(){
 	
 	testbase= new TestBase();
 	prop=testbase.init_properties();
-	driver= testbase.init_driver(prop.getProperty("browser"));
+	testbase.init_driver(prop.getProperty("browser"));
 	loginpage= new LoginPage();
-	driver.get(prop.getProperty("url"));
+	TestBase.getDriver().get(prop.getProperty("url"));
 	homepage= loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 	mystorepage= new MyOrderPage();
 	myaccountpage= new MyAccountPage();
@@ -58,7 +58,7 @@ public void orderItems(){
 
 @AfterMethod
 public void teardown(){
-	//driver.quit();
+	TestBase.getDriver().quit();
 }
 	
 	

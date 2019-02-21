@@ -17,7 +17,7 @@ public class MyAddressesTest {
 	
 	public TestBase testbase;
 	public Properties prop;
-	public WebDriver driver;
+	//public WebDriver driver;
 	public LoginPage loginpage;
 	public AddressesPage addresspage;
 	public HomePage homepage;
@@ -28,8 +28,8 @@ public class MyAddressesTest {
 	
 	testbase= new TestBase();
 	prop = testbase.init_properties();
-	driver = testbase.init_driver(prop.getProperty("browser"));
-	driver.get(prop.getProperty("url"));
+	testbase.init_driver(prop.getProperty("browser"));
+	TestBase.getDriver().get(prop.getProperty("url"));
 	loginpage= new LoginPage();
 	homepage= loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 	addresspage= homepage.GotoMyAddress();
@@ -65,7 +65,7 @@ public void addanaddressTest(){
 	@AfterMethod
 	
 	public void teardown(){
-		//driver.quit();
+		TestBase.getDriver().quit();
 	}
 
 

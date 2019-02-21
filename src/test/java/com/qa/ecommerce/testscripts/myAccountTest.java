@@ -4,6 +4,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,7 +19,7 @@ import com.qa.ecommerce.util.TestUtil;
 public class myAccountTest {
 
 	public TestBase testbase;
-	public WebDriver driver;
+	//public WebDriver driver;
 	public Properties prop;
 	public LoginPage loginpage;
 	public HomePage homepage;
@@ -32,8 +33,8 @@ public class myAccountTest {
 		testbase = new TestBase();
 		
 		prop=testbase.init_properties();
-		driver= testbase.init_driver(prop.getProperty("browser"));
-		driver.get(prop.getProperty("url"));
+		testbase.init_driver(prop.getProperty("browser"));
+		TestBase.getDriver().get(prop.getProperty("url"));
 		loginpage= new LoginPage();
 		homepage= loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 		womenpage = homepage.GotoWomenPage();
@@ -83,5 +84,10 @@ public class myAccountTest {
 		Assert.assertTrue(myaccountpage.ordersSortByAmount(), "Order details are not displayed");
 	}
 	
+@AfterTest
+	
+	public void teardown(){
+		TestBase.getDriver().quit();
+	}
 	
 }

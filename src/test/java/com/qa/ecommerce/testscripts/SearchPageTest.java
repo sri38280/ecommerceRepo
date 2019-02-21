@@ -14,7 +14,7 @@ import com.qa.ecommerce.pages.LoginPage;
 public class SearchPageTest {
 	
 		public TestBase testbase;
-		public WebDriver driver;
+		//public WebDriver driver;
 		public Properties prop;
 		public LoginPage loginpage;
 		public HomePage homepage;
@@ -25,8 +25,8 @@ public class SearchPageTest {
 			testbase = new TestBase();
 			//driver= testbase.init_driver();
 			prop=testbase.init_properties();
-			driver= testbase.init_driver(prop.getProperty("browser"));
-			driver.get(prop.getProperty("url"));
+			 testbase.init_driver(prop.getProperty("browser"));
+			TestBase.getDriver().get(prop.getProperty("url"));
 			loginpage= new LoginPage();
 			homepage= loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 			
@@ -50,6 +50,6 @@ public class SearchPageTest {
 		}
 
 		public void teardown(){
-			//driver.quit();
+			TestBase.getDriver().quit();
 		}
 }
