@@ -2,24 +2,18 @@ package com.qa.ecommerce.testscripts;
 
 import java.io.IOException;
 import java.util.Properties;
-
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import com.mytests.LoginTest;
 import com.qa.ecommerce.base.TestBase;
 import com.qa.ecommerce.pages.LoginPage;
 import com.qa.ecommerce.util.TestUtil;
 
-import TestNGListenerConcept.CustomListener;
+//import TestNGListenerConcept.CustomListener;
 //@Listeners(CustomListener.class)
 //@author Sri
 public class LoginPageTest {
@@ -85,9 +79,7 @@ public class LoginPageTest {
 	public void ExceldataDriven() throws IOException{
 		
 		loginpage.loginToAutomationExcel();
-		System.out.println("test");
-		System.out.println("test1");
-		System.out.println("test2");
+		
 		//String title = driver.getTitle();
 		//Assert.assertEquals(title, "My account - My Store", "logged in successfully");
 	}
@@ -121,7 +113,7 @@ public class LoginPageTest {
 		return TestUtil.getTestData("login");
 	}
 	
-	@Test(dataProvider = "getLoginTestData", enabled = false)
+	@Test(dataProvider = "getLoginTestData", enabled = true)
 	public void LoginTest(String emailId, String password, String errormsg) throws IOException{
 		loginpage.loginDataProvider(emailId, password);
 		Assert.assertFalse(TestBase.getDriver().getPageSource().contains(errormsg), "EmailId and password are valid");
