@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="81430" started-at="2019-02-20T15:39:59Z" finished-at="2019-02-20T15:41:21Z">
+  <suite name="Default suite" duration-ms="76990" started-at="2019-02-21T12:56:07Z" finished-at="2019-02-21T12:57:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="81430" started-at="2019-02-20T15:39:59Z" finished-at="2019-02-20T15:41:21Z">
+    <test name="Default test" duration-ms="76990" started-at="2019-02-21T12:56:07Z" finished-at="2019-02-21T12:57:24Z">
       <class name="com.qa.ecommerce.testscripts.LoginPageTest">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:com.qa.ecommerce.testscripts.LoginPageTest@5ec0a365]" name="setUP" is-config="true" duration-ms="11063" started-at="2019-02-20T09:40:00Z" finished-at="2019-02-20T09:40:11Z">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:com.qa.ecommerce.testscripts.LoginPageTest@5ec0a365]" name="setUP" is-config="true" duration-ms="7565" started-at="2019-02-21T06:56:07Z" finished-at="2019-02-21T06:56:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="ExceldataDriven()[pri:5, instance:com.qa.ecommerce.testscripts.LoginPageTest@5ec0a365]" name="ExceldataDriven" duration-ms="69721" started-at="2019-02-20T09:40:11Z" finished-at="2019-02-20T09:41:20Z">
+        <test-method status="PASS" signature="ExceldataDriven()[pri:5, instance:com.qa.ecommerce.testscripts.LoginPageTest@5ec0a365]" name="ExceldataDriven" duration-ms="68760" started-at="2019-02-21T06:56:14Z" finished-at="2019-02-21T06:57:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExceldataDriven -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.ecommerce.testscripts.LoginPageTest@5ec0a365]" name="teardown" is-config="true" duration-ms="611" started-at="2019-02-20T09:41:20Z" finished-at="2019-02-20T09:41:21Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.ecommerce.testscripts.LoginPageTest@5ec0a365]" name="teardown" is-config="true" duration-ms="641" started-at="2019-02-21T06:57:23Z" finished-at="2019-02-21T06:57:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
